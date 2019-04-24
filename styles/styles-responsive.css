@@ -65,5 +65,94 @@ main {
 
 /*footer styling*/
 footer {
-  margin: 10px;
+  margin: 0 10px;
+}
+
+@media only screen and (min-width: 768px) {
+  /*re-flexing containers*/
+  .flex-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  /*button adjustments*/
+  button {
+    padding: 10px 30px;
+  }
+  
+  /*header styling*/
+  header {
+    margin: 30px;
+  }
+  
+  .site-title {
+    flex: 1;
+  }
+  
+  a {
+    margin: 10px;
+  }
+  
+  /*main styling*/
+  main {
+    align-items: center;
+    margin: 30px;
+  }
+  
+  .text-section {
+    max-width: 50%;
+  }
+  
+  .circle-section {
+    display: block; /*to unhide it*/
+    position: relative;
+    height: 500px;
+    width: 500px;
+  }
+
+  .circle {
+    border-radius: 50%;
+    position: absolute;
+  }
+
+  .biggest-circle {
+    background-color: rgba(247, 136, 167, 0.6);
+    width: 270px;
+    height: 270px;
+
+    top: 100px;
+    right: 80px;
+  }
+
+  .middle-circle {
+    background-color: rgba(247, 193, 162, 0.7);
+    width: 180px;
+    height: 180px;
+
+    bottom: 80px;
+    right: 0;
+  }
+
+  .smallest-circle {
+    background-color: rgba(207, 130, 213, 0.6);
+    width: 120px;
+    height: 120px;
+
+    top: 145px;
+    right: 0;
+  }
+  
+  /*footer styling*/
+  footer {
+    position: relative;
+    justify-content: center;
+  }
+  
+  .scroll-button {
+    margin: 10px;
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
