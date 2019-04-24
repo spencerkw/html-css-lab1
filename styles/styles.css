@@ -115,8 +115,7 @@ main section {
   width: 270px;
   height: 270px;
   
-  top: 250px;
-  transform: translateY(-50%);
+  top: 115px;
 }
 
 .middle-circle {
